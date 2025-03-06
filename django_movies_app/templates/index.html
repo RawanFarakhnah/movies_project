@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+
+<div class="header">
+  <h1>Cinema Movies</h1>
+</div>
+
+<div class="content">
+  <div class="flex">
+    
+    {% for movie in movies %}
+     <!-- Movies -->
+     <div class="card">
+       <div class="card-header">
+         <img src="{{ movie.url }}" alt="movie-image" class="card-header-img">
+         <span class="badge">{{ movie.duration }} min</span>
+       </div>
+       <div class="card-body">
+           <h4 class="card-title">{{ movie.title }}</h4>
+           <p class="lead">{{ movie.description }}</p>
+          
+        </div>
+     </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+</body>
+</html>
