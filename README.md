@@ -14,7 +14,7 @@ The **Django Movies App** is a simple web application built using the Django fra
 - Responsive design with basic styling.
 
 ## Technologies Used
-- **Python 3**
+- **Python**
 - **Django**
 - **SQLite** (or any preferred database)
 - **HTML, CSS**
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/yourusername/django-movies-app.git
+git clone https://github.com/RawanFarakhnah/movies_project.git
 cd django-movies-app
 ```
 
